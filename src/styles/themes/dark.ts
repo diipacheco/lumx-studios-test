@@ -2,6 +2,8 @@ export default {
   title: 'dark',
 
   colors: {
+    /* Primary Colors */
+
     background: 'var(--background)',
     elements: 'var(--dark-purple)',
     text: 'var(--text)',
@@ -10,5 +12,9 @@ export default {
     grey: 'var(--grey)',
     lightGrey: 'var(--lightGrey)',
     white: 'var(--white)',
+
+    /* Support Colors */
+    red: 'var(--red)',
+    green: 'var(--green)',
   },
 };

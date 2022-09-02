@@ -1,12 +1,13 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   display: flex;
+  flex-direction: column;
   padding: 20px 12px;
 
   > header {
     display: flex;
-    width: 110%;
+    justify-content: space-between;
 
     margin-left: -12px;
     margin-right: -12px;
@@ -53,4 +54,74 @@ export const IconsSection = styled.div`
     height: 24px;
     margin-right: 6px;
   }
+`;
+
+export const Details = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 16px;
+
+  > div + div {
+    margin-top: 22px;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > h3 {
+        color: ${props => props.theme.colors.darkGrey};
+        font-size: 13px;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      > p {
+        margin-top: 4px;
+        font-size: 18px;
+        line-height: 24px;
+
+        > img {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+`;
+
+interface IPercentageNumber {
+  type: 'up' | 'down';
+}
+
+const downColor = css`
+  color: ${props => props.theme.colors.red};
+`;
+
+const upColor = css`
+  color: ${props => props.theme.colors.green};
+`;
+
+export const PercentageNumber = styled.p<IPercentageNumber>`
+  > img {
+    margin-right: 9px;
+  }
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 4px;
+
+  ${props => {
+    if (props.type === 'up') {
+      return upColor;
+    } else if (props.type === 'down') {
+      return downColor;
+    }
+  }}
 `;

@@ -52,6 +52,11 @@ export default createGlobalStyle`
     --text: #FCFCFC;
     --white: #FFFFFF;
 
+    /* Support Collors */
+
+    --red: #D03025;
+    --green: #4DBC19;
+
   }
 
 

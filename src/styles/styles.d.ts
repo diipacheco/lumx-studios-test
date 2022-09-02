@@ -5,6 +5,8 @@ declare module 'styled-components' {
     title: string;
 
     colors: {
+      /* Primary Colors */
+
       background: string;
       elements: string;
       text: string;
@@ -13,6 +15,11 @@ declare module 'styled-components' {
       grey: string;
       lightGrey: string;
       white: string;
+
+      /** Support Colors */
+
+      red: string;
+      green: string;
     };
   }
 }
