@@ -5,11 +5,10 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  min-width: 100%;
-  width: 375px;
+  width: 100%;
   height: 56px;
 
-  padding: 10px;
+  padding: 16px;
 
   background-color: ${props => props.theme.colors.elements};
 `;
@@ -25,5 +24,31 @@ export const LogoContainer = styled.section`
     }
     margin-left: 12px;
     color: ${props => props.theme.colors.lightPurple};
+  }
+`;
+
+export const NavigationContainer = styled.nav`
+  display: flex;
+  align-items: center;
+`;
+
+export const SearchButton = styled.button``;
+
+export const StyledBurger = styled.button`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 21px;
+
+  > div {
+    width: 20px;
+    height: 2px;
+    background-color: ${props => props.theme.colors.white};
+    border-radius: 10px;
   }
 `;
