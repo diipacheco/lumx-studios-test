@@ -1,7 +1,8 @@
 import React from 'react';
 
-import Logo from '../../assets/logo-seamore.svg';
-import SearchIcon from '../../assets/search.svg';
+import Logo from '~/assets/logo-seamore.svg';
+import SearchIcon from '~/assets/search.svg';
+
 import {
   Container,
   LogoContainer,

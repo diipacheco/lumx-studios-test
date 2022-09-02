@@ -2,10 +2,10 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 /** Components */
-import Header from './components/Header';
-import GlobalStyles from './styles/GlobalStyles';
+import Header from '~/components/Header';
+import GlobalStyles from '~/styles/GlobalStyles';
 /** Constants */
-import dark from './styles/themes/dark';
+import dark from '~/styles/themes/dark';
 
 function App() {
   return (

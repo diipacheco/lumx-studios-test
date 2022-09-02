@@ -43,7 +43,8 @@
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
     "typescript": "^4.5.5",
-    "vite": "^2.9.12"
+    "vite": "^2.9.12",
+    "vite-tsconfig-paths": "^3.5.0"
   },
   "pre-commit": "lint",
   "license": "MIT"
