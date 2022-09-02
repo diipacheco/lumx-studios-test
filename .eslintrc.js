@@ -23,7 +23,7 @@ module.exports = {
     browser: true,
     amd: true,
     node: true,
-    'jest/globals': true
+    'jest/globals': true,
   },
   extends: [
     'eslint:recommended',
@@ -52,6 +52,6 @@ module.exports = {
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'error',
     'jest/prefer-to-have-length': 'warn',
-    'jest/valid-expect': 'error'
+    'jest/valid-expect': 'error',
   },
 };

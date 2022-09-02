@@ -4,10 +4,12 @@ import Header from '../index';
 
 describe('Header Component', () => {
   it('should be able to render correctly', () => {
-    const { getByText } = render(<Header />);
+    const { getByRole, getByAltText } = render(<Header />);
 
-    const text = getByText('71 GWEI');
+    const text = getByRole('heading', { name: /71 GWEI/i });
+    const logo = getByAltText('Logo seamore');
 
     expect(text).toBeInTheDocument();
+    expect(logo).toBeInTheDocument();
   });
 });
