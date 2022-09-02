@@ -17,12 +17,12 @@ export const LogoContainer = styled.section`
   display: flex;
   align-items: center;
   > h1 {
-    font-size: 12px;
+    font-size: 16px;
     > strong {
-      font-size: 14px;
+      font-size: 18px;
       color: ${props => props.theme.colors.text};
     }
-    margin-left: 12px;
+    margin-left: 16px;
     color: ${props => props.theme.colors.lightPurple};
   }
 `;
