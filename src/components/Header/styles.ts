@@ -9,7 +9,21 @@ export const Container = styled.header`
   width: 375px;
   height: 56px;
 
-  background: #262338;
+  padding: 10px;
+
+  background-color: ${props => props.theme.colors.elements};
 `;
 
-export const LogoContainer = styled.section``;
+export const LogoContainer = styled.section`
+  display: flex;
+  align-items: center;
+  > h1 {
+    font-size: 12px;
+    > strong {
+      font-size: 14px;
+      color: ${props => props.theme.colors.text};
+    }
+    margin-left: 12px;
+    color: ${props => props.theme.colors.lightPurple};
+  }
+`;
