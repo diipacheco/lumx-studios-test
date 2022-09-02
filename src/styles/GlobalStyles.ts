@@ -15,6 +15,12 @@ export default createGlobalStyle`
     height: 100%;
   }
 
+  body {
+    background: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
+    -webkit-font-smoothing: antialiased;
+  }
+
   *, button, input {
     border: 0;
     background: none;
