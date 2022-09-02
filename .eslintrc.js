@@ -23,6 +23,7 @@ module.exports = {
     browser: true,
     amd: true,
     node: true,
+    'jest/globals': true
   },
   extends: [
     'eslint:recommended',
@@ -30,7 +31,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['simple-import-sort', 'prettier'],
+  plugins: ['simple-import-sort', 'prettier', 'jest'],
   rules: {
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'react/react-in-jsx-scope': 'off',
@@ -47,5 +48,10 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton'],
       },
     ],
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error'
   },
 };
