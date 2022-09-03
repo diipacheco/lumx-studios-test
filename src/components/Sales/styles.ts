@@ -4,10 +4,16 @@ export const Container = styled.section`
   margin-top: 54px;
 `;
 
-export const RowContainer = styled.section`
+interface IRowContainer {
+  showingSales?: boolean;
+}
+
+export const RowContainer = styled.section<IRowContainer>`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  justify-content: ${props =>
+    props.showingSales ? 'space-between' : 'center'};
 
   padding: 12px;
 

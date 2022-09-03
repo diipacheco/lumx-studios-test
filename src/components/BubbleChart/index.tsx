@@ -17,9 +17,15 @@ import { ChartContainer, Container, Content } from './styles';
 ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
 export const options = {
+  responsive: true,
   scales: {
     y: {
       beginAtZero: true,
+    },
+  },
+  plugins: {
+    legend: {
+      position: 'top' as const,
     },
   },
 };

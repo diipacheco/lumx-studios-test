@@ -5,20 +5,27 @@ import Card from '~/components/Card';
 
 import { Container, RowContainer } from './styles';
 
-const Sales: React.FC = () => {
+interface ISales {
+  title: string;
+  showingSales?: boolean;
+}
+
+const Sales: React.FC<ISales> = ({ title, showingSales }) => {
   return (
     <Container>
       <Card>
-        <RowContainer>
+        <RowContainer showingSales={showingSales}>
           <div>
-            <h3>Sales</h3>
+            <h3>{title}</h3>
           </div>
-          <div>
-            <p>Showing 2300 sales.</p>
-          </div>
+          {showingSales && (
+            <div>
+              <p>Showing 2300 sales.</p>
+            </div>
+          )}
         </RowContainer>
 
-        <RowContainer>
+        <RowContainer showingSales>
           <div>
             <h4>Time:</h4>
           </div>
