@@ -1,5 +1,6 @@
 import React from 'react';
 
+import BubbleChart from '~/components/BubbleChart';
 import Sales from '~/components/Sales';
 import SummarySection from '~/components/SummarySection';
 
@@ -10,6 +11,7 @@ const Main: React.FC = () => {
     <Container>
       <SummarySection />
       <Sales />
+      <BubbleChart />
     </Container>
   );
 };

@@ -23,8 +23,10 @@ const Sales: React.FC = () => {
             <h4>Time:</h4>
           </div>
           <div>
-            <Button active>24hrs</Button>
-            <Button>7D</Button>
+            <Button typeButton="default" active>
+              24hrs
+            </Button>
+            <Button typeButton="default">7D</Button>
           </div>
         </RowContainer>
       </Card>

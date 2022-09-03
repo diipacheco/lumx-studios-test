@@ -10,7 +10,7 @@ export default {
     lightPurple: 'var(--light-purple)',
     darkGrey: 'var(--dark-grey)',
     grey: 'var(--grey)',
-    lightGrey: 'var(--lightGrey)',
+    lightGrey: 'var(--light-grey)',
     white: 'var(--white)',
 
     /* Support Colors */
